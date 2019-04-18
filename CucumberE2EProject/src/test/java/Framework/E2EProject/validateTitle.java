@@ -20,6 +20,7 @@ public class validateTitle extends Base{
 	@BeforeTest
 	public void openBrowser() throws IOException
 	{
+		System.out.println("Initializing a browser");
 		driver=initializeBrowser();
 		log.debug("Browser is launched");
 		driver.get(p.getProperty("url"));
@@ -41,6 +42,13 @@ public class validateTitle extends Base{
 	{
 		driver.close();
 		driver=null;
+		log.info("Browser is closed");
+	}
+	
+	@Test
+	public void demo1()
+	{
+		
 		log.info("Browser is closed");
 	}
 	

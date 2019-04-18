@@ -18,6 +18,7 @@ public class homeQAClick {
 	////div[@class='text-center']/h2
 	WebElement title;
 	
+
 	//@FindBy(xpath="//button[text()='NO THANKS']")
 	//WebElement popup;
 	
@@ -32,7 +33,7 @@ public class homeQAClick {
 	public int getpopupsize()
 	{
 		return driver.findElements(popup).size();
-		System.out.println("This is changed data");
+		//System.out.println("This is changed data");
 	}
 	
 	public WebElement getpopup()
