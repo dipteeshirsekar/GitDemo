@@ -32,6 +32,7 @@ public class homeQAClick {
 	public int getpopupsize()
 	{
 		return driver.findElements(popup).size();
+		System.out.println("This is changed data");
 	}
 	
 	public WebElement getpopup()
